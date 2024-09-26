@@ -1,0 +1,104 @@
+:root {
+  font-size: 0.875em;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: whitesmoke;
+  background-image: url(../images/black-bricks-background.jpg);
+}
+
+.page-header {
+  color: #2f4f4f;
+  margin-bottom: 10px;
+}
+
+.nav {
+  margin-top: 10px;
+  padding: 5px;
+  list-style-type: none;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav a {
+  border-radius: 2px;
+  text-decoration: none;
+  background-color: #13a4a4;
+  color: cadetblue;
+  padding: 5px 15px;
+}
+
+.nav .featured {
+  background-color: orange;
+  box-shadow: 10px 2px #6f9090;
+}
+
+a:link {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+}
+
+a:visited {
+  background-color: purple;
+}
+
+a:hover {
+  background-color: transparent;
+  color: blue;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
+
+.footer {
+  color: #666;
+  background-color: #ccc;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer a {
+  color: inherit;
+  background-color: unset;
+  text-decoration: revert;
+}
+
+.coffees {
+  margin: 20px 0;
+}
+
+.coffees > a {
+  min-width: 300px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+@supports (display: grid) {
+  .coffees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .coffees a {
+    margin: unset;
+    min-width: unset;
+  }
+}
+
+p {
+  color: whitesmoke;
+}
